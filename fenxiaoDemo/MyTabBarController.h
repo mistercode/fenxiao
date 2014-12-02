@@ -9,5 +9,20 @@
 #import <UIKit/UIKit.h>
 
 @interface MyTabBarController : UITabBarController
-
+{
+    UIImageView *tabBarBG;
+    UITabBarItem *anitemHome;
+    UITabBarItem *anitemScale;
+    UITabBarItem *anitemMerchant;
+    UITabBarItem *anitemForum;
+    UITabBarItem *anitemPerson;
+    UIButton *homeBtn;
+    UIButton *scaleBtn;
+    UIButton *merchantBtn;
+    UIButton *forumBtn;
+    UIButton *personBtn;
+    
+}
+-(void)showtabbar;
+-(void)hidetabbat;
 @end

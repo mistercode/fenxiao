@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SelectViewController : UIViewController
+@interface SelectViewController : UIViewController<UITextFieldDelegate>
+- (IBAction)gobackBtn:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *selectTF;
 
 @end

@@ -116,6 +116,7 @@
     if (FeedBacktext.text.length > 0 && FeedBacktext.text.length <= 200) {
         CLog(@"提交");
     }else{
+        promptLabel.hidden = NO;
         [self myAlectView:@"您输入的内容不在规定范围" andbuttonGut:@"确定"];
     }
    

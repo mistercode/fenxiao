@@ -7,7 +7,7 @@
 //
 
 #import "myoneViewController.h"
-
+#import "MyTabBarController.h"
 @interface myoneViewController ()
 
 @end
@@ -16,14 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor orangeColor];
+   
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    
     // Dispose of any resources that can be recreated.
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+//    显示navigationbar
+    self.navigationController.navigationBarHidden = NO;
+    //    初始化的时候注意转下
+    MyTabBarController *MtB = (MyTabBarController *)self.tabBarController;
+    [MtB hidetabbat];
+}
 /*
 #pragma mark - Navigation
 

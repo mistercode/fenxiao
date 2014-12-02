@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface saixuanCollectionViewCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UILabel *saixuanlabel;
 
 @end

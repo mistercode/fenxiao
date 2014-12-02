@@ -10,8 +10,20 @@
 
 @implementation saixuanCollectionViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self)
+    {
+        // 初始化时加载collectionCell.xib文件
+        NSArray *arrayOfViews = [[NSBundle mainBundle] loadNibNamed:@"saixuanCollectionViewCell" owner:self options:nil];
+        
+        self = [arrayOfViews lastObject];
+        // 加载nib
+        self = [arrayOfViews objectAtIndex:0];
+    }
+    return self;
 }
+
 
 @end

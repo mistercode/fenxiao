@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface paixuViewController : UIViewController
+- (IBAction)goback:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *freshInToBtn;
+@property (weak, nonatomic) IBOutlet UIButton *delegateNumberBtn;
+@property (weak, nonatomic) IBOutlet UIButton *productNumberBtn;
+
+
+
+
 
 @end

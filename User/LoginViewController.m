@@ -8,7 +8,6 @@
 
 #import "LoginViewController.h"
 #import "RegisterFactoryViewController.h"
-#import "RegisterUserViewController.h"
 #import "MyTabBarController.h"
 #import "FirstSecretViewController.h"
 @interface LoginViewController ()

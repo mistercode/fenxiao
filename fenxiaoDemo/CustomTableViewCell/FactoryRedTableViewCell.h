@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FactoryRedTableViewCell : UITableViewCell
+@interface FactoryRedTableViewCell : UITableViewCell<UIScrollViewDelegate>
 
+@property (nonatomic,strong) UIPageControl * pageControl;
+@property (nonatomic,strong) UIScrollView * bannerScrollView;
+
+@property (nonatomic,strong) NSMutableArray * imageviewArray;
 @end

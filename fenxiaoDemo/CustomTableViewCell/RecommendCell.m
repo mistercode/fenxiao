@@ -79,7 +79,7 @@ static NSMutableArray * imageviewArray;
                 [bannerBtn setBackgroundColor:[UIColor redColor]];
                 break;
             case 1:
-                [bannerBtn setBackgroundColor:[UIColor whiteColor]];
+                [bannerBtn setBackgroundColor:[UIColor lightGrayColor]];
                 break;
             case 2:
                 [bannerBtn setBackgroundColor:[UIColor blackColor]];
@@ -88,7 +88,7 @@ static NSMutableArray * imageviewArray;
                 [bannerBtn setBackgroundColor:[UIColor grayColor]];
                 break;
             case 4:
-                [bannerBtn setBackgroundColor:[UIColor yellowColor]];
+                [bannerBtn setBackgroundColor:[UIColor greenColor]];
                 break;
                 
             default:

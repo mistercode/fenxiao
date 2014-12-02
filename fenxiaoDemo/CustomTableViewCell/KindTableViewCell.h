@@ -10,4 +10,5 @@
 
 @interface KindTableViewCell : UITableViewCell
 
+
 @end

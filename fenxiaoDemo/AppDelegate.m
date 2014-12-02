@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MyTabBarController.h"
+#import "UMSocial.h"
+#import "UMSocialQQHandler.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//    [UMSocialData setAppKey:@"54758072fd98c5b50e0009d5"];
+//    [UMSocialQQHandler setQQWithAppId:@"100424468" appKey:@"c7394704798a158208a74ab60104f0ba" url:@"http://www.umeng.com/social"];
+  
+    
     // Override point for customization after application launch.
+    MyTabBarController *MTabBar = [[MyTabBarController alloc]init];
+    self.window.rootViewController = MTabBar;
     return YES;
 }
 
@@ -42,4 +50,15 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return  [UMSocialSnsService handleOpenURL:url];
+}
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return  [UMSocialSnsService handleOpenURL:url];
+}
 @end

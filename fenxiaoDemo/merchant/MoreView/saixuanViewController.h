@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface saixuanViewController : UIViewController
+@interface saixuanViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
+{
+    NSMutableArray *letterArr;
+}
+- (IBAction)goback:(id)sender;
+@property (weak, nonatomic) IBOutlet UICollectionView *saixuanCollertion;
 
 @end

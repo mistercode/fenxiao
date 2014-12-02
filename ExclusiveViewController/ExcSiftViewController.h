@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ExcSift.h"
 
 @interface ExcSiftViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 

@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface moreView : UIView
+@protocol btndelegate<NSObject>
 
+-(void)touchale:(int)tagValue;
+@end
+
+@interface moreView : UIView
+{
+    UIButton *paixuBtn;
+    UIButton *saixuanBtn;
+    UIButton *seekBtn;
+    UIButton *goBackHome;
+}
+//设置属性
+@property (nonatomic,assign) id<btndelegate>delegate;
 @end
