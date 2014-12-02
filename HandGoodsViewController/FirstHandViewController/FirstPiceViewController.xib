@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstPiceViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ML-fM-D66">
+                    <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ash-7i-9B8">
+                            <rect key="frame" x="8" y="13" width="16" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23" id="5GW-gs-Yrr"/>
+                                <constraint firstAttribute="width" constant="16" id="sbv-In-rW8"/>
+                            </constraints>
+                            <state key="normal" image="back.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backClick:" destination="-1" eventType="touchUpInside" id="5TS-wB-ixb"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvW-FA-KQO">
+                            <rect key="frame" x="110" y="13" width="100" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="ovR-f3-U7k"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.12549019610000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="1" green="0.52669477840000001" blue="0.78728323180000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="OvW-FA-KQO" firstAttribute="top" secondItem="5ML-fM-D66" secondAttribute="top" constant="13" id="5nQ-HK-gFC"/>
+                        <constraint firstAttribute="bottom" secondItem="OvW-FA-KQO" secondAttribute="bottom" constant="13" id="JpU-fJ-F7F"/>
+                        <constraint firstItem="OvW-FA-KQO" firstAttribute="top" secondItem="5ML-fM-D66" secondAttribute="top" constant="13" id="NBY-UA-Uuf"/>
+                        <constraint firstItem="OvW-FA-KQO" firstAttribute="leading" secondItem="Ash-7i-9B8" secondAttribute="trailing" constant="86" id="Opl-gO-mEp"/>
+                        <constraint firstItem="Ash-7i-9B8" firstAttribute="top" secondItem="5ML-fM-D66" secondAttribute="top" constant="13" id="OqB-SK-vkC"/>
+                        <constraint firstItem="OvW-FA-KQO" firstAttribute="centerY" secondItem="5ML-fM-D66" secondAttribute="centerY" id="VIy-Zz-gAh"/>
+                        <constraint firstItem="OvW-FA-KQO" firstAttribute="centerX" secondItem="5ML-fM-D66" secondAttribute="centerX" id="cDm-mC-U5t"/>
+                        <constraint firstItem="OvW-FA-KQO" firstAttribute="top" secondItem="5ML-fM-D66" secondAttribute="top" constant="13" id="dwE-D0-rfd"/>
+                        <constraint firstItem="OvW-FA-KQO" firstAttribute="top" secondItem="5ML-fM-D66" secondAttribute="top" constant="13" id="fqJ-85-8fi"/>
+                        <constraint firstItem="OvW-FA-KQO" firstAttribute="top" secondItem="Ash-7i-9B8" secondAttribute="top" id="hjb-O0-JHl"/>
+                        <constraint firstAttribute="bottom" secondItem="OvW-FA-KQO" secondAttribute="bottom" constant="13" id="uH9-XG-rv9"/>
+                        <constraint firstItem="Ash-7i-9B8" firstAttribute="leading" secondItem="5ML-fM-D66" secondAttribute="leading" constant="8" id="unF-s2-gel"/>
+                        <constraint firstItem="OvW-FA-KQO" firstAttribute="leading" secondItem="5ML-fM-D66" secondAttribute="leading" constant="110" id="w6d-yq-x27"/>
+                        <constraint firstItem="OvW-FA-KQO" firstAttribute="leading" secondItem="5ML-fM-D66" secondAttribute="leading" constant="110" id="xqO-5g-QdT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5ML-fM-D66" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="3G4-b9-aBO"/>
+                <constraint firstAttribute="trailing" secondItem="5ML-fM-D66" secondAttribute="trailing" id="Jq7-cZ-TpA"/>
+                <constraint firstItem="5ML-fM-D66" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lm5-Vs-38Q"/>
+            </constraints>
+            <point key="canvasLocation" x="310" y="282"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="26" height="46"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstDetailViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="azN-vG-FCH">
+                    <rect key="frame" x="0.0" y="19" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="商品详情" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm4-CB-GSt">
+                            <rect key="frame" x="110" y="14" width="100" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNQ-dH-rCp">
+                            <rect key="frame" x="274" y="17" width="25" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="0t2-w0-OjH"/>
+                                <constraint firstAttribute="width" constant="25" id="kSM-4h-JQs"/>
+                            </constraints>
+                            <state key="normal" image="more.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="moreClick:" destination="-1" eventType="touchUpInside" id="Ko7-m5-MIu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttn-9g-382">
+                            <rect key="frame" x="8" y="13" width="16" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="8aP-yo-643"/>
+                                <constraint firstAttribute="height" constant="23" id="c4q-GX-puc"/>
+                            </constraints>
+                            <state key="normal" image="back.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backClick:" destination="-1" eventType="touchUpInside" id="bd2-Fv-BRs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.12549019610000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="1" green="0.52669477840000001" blue="0.78728323180000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="FNQ-dH-rCp" firstAttribute="top" secondItem="azN-vG-FCH" secondAttribute="top" constant="17" id="9am-sg-IlF"/>
+                        <constraint firstItem="ttn-9g-382" firstAttribute="leading" secondItem="azN-vG-FCH" secondAttribute="leading" constant="8" id="j2S-5Q-r21"/>
+                        <constraint firstAttribute="trailing" secondItem="FNQ-dH-rCp" secondAttribute="trailing" constant="21" id="tSi-70-InT"/>
+                        <constraint firstItem="ttn-9g-382" firstAttribute="top" secondItem="azN-vG-FCH" secondAttribute="top" constant="13" id="usI-tD-6zE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="azN-vG-FCH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Jnt-9H-QUm"/>
+                <constraint firstItem="azN-vG-FCH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="19" id="e1f-Y1-ijd"/>
+                <constraint firstAttribute="trailing" secondItem="azN-vG-FCH" secondAttribute="trailing" id="z9D-ti-WEB"/>
+            </constraints>
+            <point key="canvasLocation" x="310" y="361"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="26" height="46"/>
+        <image name="more.png" width="50" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
